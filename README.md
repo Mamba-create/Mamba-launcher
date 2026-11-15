@@ -1,2 +1,13 @@
-# Mamba-launcher
-Mamba Launcher is my own custom launcher, created with the help of AI (Claude, Codex, etc.). It’s a Minecraft launcher that supports both the Java and Bedrock editions. Right now, it’s still quite rough and rather bare-bones, but I plan to add more features in the future even though, in all likelihood, no one will ever actually use it
+# Mamba Launcher (Java + Bedrock)
+Not affiliated with or endorsed by Mojang.
+
+- `start.bat` - run the launcher (installs dependencies on the first run)
+- `create-shortcut.bat` - desktop shortcut "Mamba Launcher" with the snake icon
+- `build-installer.bat` - builds `dist\Mamba Launcher Setup x.x.x.exe` (Start menu + desktop shortcut)
+
+Java is downloaded automatically for each Minecraft version (Settings -> Java executable: leave empty).
+
+Data (every instance is its own isolated folder, Prism-style):
+- Java:    %APPDATA%\.minecraft_java\instances\<id>\minecraft   (libraries/assets/versions/runtime shared in %APPDATA%\.minecraft_java)
+- Bedrock: %APPDATA%\.minecraft_bedrock\instances\<id>\com.mojang
+- Config:  %APPDATA%\.minecraft_launcher\launcher.json
